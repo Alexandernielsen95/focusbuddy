@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Focusbuddy — Privacy Policy</title>
+<title>Focusbuddy: Privacy Policy</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
          max-width: 680px; margin: 0 auto; padding: 32px 20px; line-height: 1.6;
@@ -14,22 +14,31 @@
 </style>
 </head>
 <body>
-<h1>Focusbuddy — Privacy Policy</h1>
-<p class="updated">Effective date: July 4, 2026</p>
+<h1>Focusbuddy: Privacy Policy</h1>
+<p class="updated">Effective date: July 4, 2026. Last updated: September 28, 2026 (version 1.1 adds usage analytics).</p>
 
-<p><strong>The short version: by default, Focusbuddy collects no data about you and sends nothing off your device. Everything you put into the app stays on your device (and, if you turn on iCloud sync, in your own private iCloud). We have no servers, no accounts, no analytics, and no ads. The one exception is entirely your choice: if you turn on an external AI provider or web search in Settings, the data needed for that feature is sent directly to the provider you picked — never to us. Both are off by default.</strong></p>
+<p><strong>The short version: your quests, notes, chats and Safety Plan stay on your device (and, if you turn on iCloud sync, in your own private iCloud). We have no accounts and no ads. Since version 1.1, the app sends anonymous usage analytics to PostHog, including screen recordings with your typing and private screens hidden. Apple Health data is never sent to analytics. You can turn analytics off in Settings. The other exception is entirely your choice: if you turn on an external AI provider or web search in Settings, the data needed for that feature is sent directly to the provider you picked, never to us. Both are off by default.</strong></p>
 
 <h2>Who we are</h2>
 <p>Focusbuddy is an independent iOS app. For anything privacy-related, contact: <strong>coder420@blazedlabz.com</strong>.</p>
 
 <h2>What we collect</h2>
-<p>Nothing ourselves. Focusbuddy has no server and no user accounts. Your quests, notes, streaks, garden, companion conversations, and settings are stored only in the app's local database on your device. The only data that ever leaves your device is described below, and only if you turn it on.</p>
+<p>Only anonymous usage analytics (see below). Focusbuddy has no server of its own and no user accounts. Your quests, notes, streaks, garden, companion conversations, and settings are stored only in the app's local database on your device. The data that leaves your device is described below. Apart from usage analytics, all of it is off until you turn it on.</p>
+
+<h2>Usage analytics (PostHog, since version 1.1, on by default)</h2>
+<p>To learn which parts of the app help people and where they get stuck, Focusbuddy sends anonymous usage data to PostHog, an analytics service, on our behalf. PostHog stores it in its EU cloud (eu.posthog.com).</p>
+<p><strong>What is sent:</strong> a random ID made for this install (not your name, email or Apple Account), app open and close, which screens you open, taps and fixed events (for example "quest created", "sprint finished", "paywall viewed", "purchase completed"), and basic device facts such as model, iOS version, app version, language and time zone. PostHog may estimate a rough location (country or city) from your IP address.</p>
+<p><strong>Screen recordings:</strong> the app also records how screens look while you use it. Text you type and all images are hidden. The companion chat, chat history, the Safety Plan, the AI screens (the AI task breakdown and companion settings), Diary Cards, Brain Dump and every screen that shows Apple Health data are hidden and pause the recording while they are open. Quest titles are hidden.</p>
+<p><strong>What is never sent:</strong> quest text, chat messages, your Safety Plan, anything you type, Apple Health data, your precise location, your voice, or your API keys.</p>
+<p>We do not use this data for ads, we do not link it with other companies' data, and we do not sell it. The same PostHog project also receives the anonymous usage data of our other app, Hydration Buddy. We do not link the data of the two apps.</p>
+<p><strong>Turn it off</strong> anytime in Settings, Privacy, Analytics. When it is off, nothing more is sent and recording stops at once.</p>
+<p><strong>How long it is kept:</strong> on our current PostHog plan, PostHog keeps this data for 1 year and then deletes it.</p>
 
 <h2>iCloud sync (optional, off by default)</h2>
 <p>If you turn on iCloud Sync in Settings, your app data is stored in your personal, <em>private</em> iCloud database (Apple CloudKit) so it can sync between your own devices. This data is tied to your Apple Account, encrypted in transit and at rest by Apple, and is technically inaccessible to us. Turning sync off stops further syncing; you can delete iCloud app data at any time in iOS Settings → your name → iCloud.</p>
 
 <h2>Apple Health (optional, read-only)</h2>
-<p>If you enable HealthKit integration, Focusbuddy reads steps, workout minutes, mindful minutes, and sleep to adjust your daily energy suggestions and celebrate movement. This data is read on your device, is never written anywhere else, never leaves your device, and is never used for advertising or shared with anyone. You can revoke access at any time in iOS Settings → Privacy &amp; Security → Health.</p>
+<p>If you enable HealthKit integration, Focusbuddy reads steps, workout minutes, mindful minutes, and sleep to adjust your daily energy suggestions and celebrate movement. This data is read on your device, is never written anywhere else, never leaves your device, is never sent to analytics (screens that show it are hidden from screen recordings), and is never used for advertising or shared with anyone. You can revoke access at any time in iOS Settings → Privacy &amp; Security → Health.</p>
 
 <h2>Microphone &amp; speech (optional)</h2>
 <p>The voice brain-dump feature uses your microphone and Apple's on-device speech recognition to turn your spoken thoughts into text. Audio and transcripts are processed entirely on your device and are not transmitted anywhere.</p>
@@ -38,13 +47,13 @@
 <p>If you allow location access, it is used once to show crisis helplines local to your region in the Safety Plan. Your location is not stored and never leaves your device.</p>
 
 <h2>The AI companion</h2>
-<p>Your companion is an AI, not a human. By default, it runs on Apple's on-device foundation models (or a built-in scripted fallback on devices without them). In this default mode, conversations are processed and stored only on your device (and in your private iCloud if sync is on) — nothing is sent to us or any third party.</p>
+<p>Your companion is an AI, not a human. By default, it runs on Apple's on-device foundation models (or a built-in scripted fallback on devices without them). In this default mode, conversations are processed and stored only on your device (and in your private iCloud if sync is on). Nothing is sent to us or any third party.</p>
 
 <h2>External AI provider (optional, off by default)</h2>
-<p>In Settings, you can choose to connect your own account with ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), or OpenRouter, using an API key you obtain and enter yourself. If you turn this on, your chat messages are sent directly from your device to the provider you chose, using your own key — never through us, and we never see or store them. Your key is saved only in this phone's Keychain. The chat screen always shows which provider (if any) is currently active. Turning this off returns you to fully on-device processing.</p>
+<p>In Settings, you can choose to connect your own account with ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), or OpenRouter, using an API key you obtain and enter yourself. If you turn this on, your chat messages are sent directly from your device to the provider you chose, using your own key, never through us, and we never see or store them. Your key is saved only in this phone's Keychain. The chat screen always shows which provider (if any) is currently active. Turning this off returns you to fully on-device processing.</p>
 
 <h2>Web search (optional, off by default)</h2>
-<p>If you turn on "Allow web search" in Settings, only the search words you or your companion send are shared with DuckDuckGo or Wikipedia to look up an answer — no other conversation content or personal information is sent.</p>
+<p>If you turn on "Allow web search" in Settings, only the search words you or your companion send are shared with DuckDuckGo or Wikipedia to look up an answer. No other conversation content or personal information is sent.</p>
 
 <h2>Crisis support always stays on-device</h2>
 <p>Regardless of whether an external AI provider or web search is turned on, Focusbuddy's crisis-language detection and Safety Plan always run locally on your device first, before anything is sent anywhere.</p>
@@ -56,15 +65,15 @@
 <p>Focusbuddy is not directed at children under 13. The companion is clearly disclosed as AI, and the Safety Plan provides crisis resources.</p>
 
 <h2>Your rights (GDPR, UK GDPR, CCPA/CPRA &amp; similar laws)</h2>
-<p>This section applies no matter which country's App Store you downloaded Focusbuddy from. Because we hold no server-side personal data about you, there is nothing for us to access, correct, export, or erase on your behalf under the EU/UK GDPR, the California Consumer Privacy Act (CCPA/CPRA), or similar laws elsewhere — you hold all of your data yourself, on your own device and (if enabled) your own private iCloud. We do not sell or share personal information, and we have no advertising or analytics partners to share it with. Deleting the app deletes its local data; iCloud data can be removed at any time via iOS Settings as described above. If you've turned on an external AI provider or web search, see "International data transfers" below for how those specific requests are handled.</p>
+<p>This section applies no matter which country's App Store you downloaded Focusbuddy from. Apart from the anonymous analytics above, we hold no personal data about you on any server. You hold all your other data yourself, on your own device and (if enabled) your own private iCloud. The analytics data is not tied to your name or Apple Account, so we usually cannot find which records are yours. If you want us to try, under the EU/UK GDPR, the California Consumer Privacy Act (CCPA/CPRA) or similar laws elsewhere, email coder420@blazedlabz.com. We do not sell or share personal information, and we have no advertising partners. Our only analytics partner is PostHog. Deleting the app deletes its local data; iCloud data can be removed at any time via iOS Settings as described above. If you've turned on an external AI provider or web search, see "International data transfers" below for how those specific requests are handled.</p>
 
 <h2>International data transfers</h2>
-<p>Focusbuddy itself has no servers, so it does not transfer your data internationally. The one exception: if you turn on an external AI provider or web search, the message or search you send goes directly from your device to that provider's own servers, which may be located in a different country than you (for example, the U.S.). That transfer is governed by the provider's own privacy policy and safeguards, not ours — please review the provider's policy if this matters to you. Both features are off by default and can be turned off anytime in Settings.</p>
+<p>Focusbuddy has no servers of its own. Usage analytics go to PostHog's EU cloud (eu.posthog.com). The other exception: if you turn on an external AI provider or web search, the message or search you send goes directly from your device to that provider's own servers, which may be located in a different country than you (for example, the U.S.). That transfer is governed by the provider's own privacy policy and safeguards, not ours. Please review the provider's policy if this matters to you. Both features are off by default and can be turned off anytime in Settings.</p>
 
 <h2>Changes</h2>
 <p>If this policy ever changes, the new version will be posted at this address with an updated effective date. Any change will keep the same principle: your data stays yours.</p>
 
 <h2>Not medical care</h2>
-<p>Focusbuddy is a wellness tool. It does not provide medical advice, diagnosis, or treatment. If you're struggling, please reach out to a clinician — and the app's Safety Plan can connect you with crisis resources.</p>
+<p>Focusbuddy is a wellness tool. It does not provide medical advice, diagnosis, or treatment. If you're struggling, please reach out to a clinician. The app's Safety Plan can connect you with crisis resources.</p>
 </body>
 </html>
